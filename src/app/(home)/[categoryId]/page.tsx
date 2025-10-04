@@ -68,12 +68,14 @@ const Page = async ({
 	const colors = await db.color.findMany();
 	const sizes = await db.size.findMany();
 
+
 	return (
 		<div className='max-w-7xl mx-auto px-6 2xl:px-0'>
 			<Billboard
 				title={category.title}
 				img={category.billboard}
 			/>
+			
 			<div className='grid grid-cols-5 gap-5 xl:gap-8 mb-8'>
 				{/* filter large desktop */}
 				<div className='col-span-1 hidden xl:flex flex-col gap-8'>
